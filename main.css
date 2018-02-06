@@ -21,6 +21,14 @@ h3 {
   text-align: center;
 }
 
-#assignment-titles{
+.assignment-titles{
+  text-align: center;
+}
+
+.screenshots{
+  text-align: center;
+}
+
+#portfolio{
   text-align: center;
 }
