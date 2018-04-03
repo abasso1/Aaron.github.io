@@ -6,8 +6,8 @@ let aaronpolygon = L.polygon([
   [37, 45],
   [40, 70]
 ]).addTo(aaronmap);
-aaronpolygon.bindPopup('Disney World')
-aaronmarker.bindPopup('NOT Disney World')
+aaronpolygon.bindPopup('NOT Disney World')
+aaronmarker.bindPopup('The dirty white North')
 function logRide (event) {
   console.log('Best Ride in park' + event.latlng)
 };
