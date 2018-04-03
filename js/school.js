@@ -1,7 +1,7 @@
-function describeSchool (school) {
-  let description = 'At ' + school + ' there is a live tiger on campus.'
+function describeschool (myschool) {
+  let description = 'At ' + myschool + ' there is a live tiger on campus.'
   return description
 }
-let mySchool = 'LSU'
-let description = describeSchool(mySchool)
+let myschool = 'LSU'
+let description = describeschool(myschool)
 console.log(description)
