@@ -28,3 +28,11 @@ let usa = L.polygon(usaCoords,usaStyle).addTo(aaronmap);
 
 usa.bindPopup('USA! USA! USA! USA!')
 island.bindPopup('Baffin Island')
+
+aaronmap.on('click', function(e) {
+        var popLocation= e.latlng;
+        var popup = L.popup()
+        .setLatLng(popLocation)
+        .setContent('<p>There is nothing worth seeing here!<br />Try some other region.</p>')
+        .openOn(aaronmap);
+    });
