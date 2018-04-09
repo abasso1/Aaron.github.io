@@ -20,8 +20,9 @@ let usaCoords= [
 ]
 let usaStyle = {
   color: 'blue',
-  fillColor: 'red',
-  dasharray: 5
+  fillColor: '#ff0000',
+  weight: 4
+
 }
 let usa = L.polygon(usaCoords,usaStyle).addTo(aaronmap);
 
