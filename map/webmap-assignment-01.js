@@ -2,10 +2,10 @@ let aaronmap = L.map('aaronmap').setView([20, -10], 8)
 L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}.png').addTo(aaronmap);
 let aaronmarker = L.marker([69, -69]).addTo(aaronmap);
 let aaronpolygon = L.polygon([
-  [48, -127],
-  [48, -67],
-  [25, -79],
-  [31,-123]
+  [1, -1],
+  [2, -6],
+  [5, -9],
+  [3,-3]
 ]).addTo(aaronmap);
 aaronpolygon.bindPopup('USA! USA! USA! USA!')
 aaronmarker.bindPopup('The dirty white North')
