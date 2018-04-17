@@ -4,9 +4,9 @@ let mylayer1 = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services
 let mylayer2 = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 let mylayer3 = L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png');
 let mylayers = {
-  'normal': mylayer1,
-  'next': mylayer2,
-  'b and w': mylayer3
+  'Topo': mylayer1,
+  'Featureless': mylayer2,
+  'Street Views': mylayer3
 }
 L.control.layers(mylayers).addTo(aaronmap2)
 let aaronStyle2 = {
@@ -25,5 +25,5 @@ L.geoJSON(geojson, aaronOptions2).addTo(aaronmap2);
 function aaronpopup (feature, layer) {
   let agency = feature.properties.AGENCY
   let phone = feature.properties.PHONE
-  layer.bindPopup( agency + ' is in charge of all the recycling for the district.<br> Please contact them at ' + phone + ' for any furhter inquiries.')
+  layer.bindPopup( agency + ' is in charge of all the recycling for the district.<br> Please contact them at ' + phone + ' for any further inquiries.')
 }
