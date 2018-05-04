@@ -20,12 +20,13 @@ var huntpolyline=[
     [39.722, -75.79],
     [38.463, -75.69]
 ];
-L.polyline(huntpolyline, {weight:7, opacity:1, color:'red'}).addTo(huntmap).bindPopup("The Mason-Dixion Line");
+
+L.polyline(huntpolyline, {weight:7, opacity:1, color:'red'}).addTo(huntmap);
 let huntStyle = {
   color: 'Green',
   fillcolor: 'Green',
   weight: 2,
-  fillOpacity: 0.2,
+  fillOpacity: 0.1,
   dasharray: 4
 }
 let huntOptions = {
@@ -35,7 +36,7 @@ let huntOptions = {
 L.geoJSON(geojson, {
     style: function(feature) {
         switch (feature.properties.density) {
-            case 'Yes': return {color: "#ff0000"};
+            case 'Yes': return {color: "#e68a00"};
 
         }
     }
@@ -45,7 +46,7 @@ L.geoJSON(geojson, huntOptions).addTo(huntmap)
 function huntpopup (feature, layer) {
   let density = feature.properties.density
   let name = feature.properties.name
-  layer.bindPopup( name + ':<br> ' + density + ', I have hunted in this State!')
+  layer.bindPopup( name + ':<br>  Have i hunted in this State?!<br>'+ density+'!!')
 }
 
 
